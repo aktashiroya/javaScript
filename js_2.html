@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practis</title>
+
+    <script type="text/javascript">
+
+        // var name="my office";
+        // alert("Welcome to "+name);
+
+        // if(confirm("Are you Coming?"))
+        // {
+        //     document.write("Welcome");
+        // }
+        // else
+        // {
+        //     document.write("No Thanks");
+        // }
+
+        // var a,b;
+        // a=prompt("Enter Value for A :",0);
+        // b=prompt("Enter Value for B :",0);
+        // document.write("Value of A + B =",parseInt(a)+parseInt(b));
+
+        //javascript function's
+
+            var city="surat";
+            document.write("<br><center>Hellooo…!World…");
+            document.write("<br>",city.big());
+            document.write("<br>",city.small());
+            document.write("<br>",city.bold());
+            document.write("<br>",city.italics());
+            document.write("<br>",city.strike());
+            document.write("<br>",city.fontcolor('red'));
+            document.write("<br>",city.fontsize('5'));
+
+            var nm="Good Morning , how are you";
+            size=nm.length;
+            document.write("<br>Size is = ",size);
+
+            var name="hello";
+            document.write("<br>",name.charAt(1));
+
+            var name="be creative";
+            document.write("<br>",name.concat(",hello"));
+
+            var name="Be Creative";
+            document.write("<br>",name.indexOf("a"));
+
+            var name="Be Creative";
+            var mystr=(name.match("Creative"));
+            if(mystr!=null)
+            {
+                document.write("<br>your string is match");
+            }
+            else
+            {
+                document.write("<br>your string is not match");
+            }
+
+            var name="Be Creative";
+            var mystr = (name.replace("Be","Always"));
+            document.write("<br>",mystr);
+
+            var name="Be Creative";
+            var mystr = (name.search("Creative"));
+            if(mystr >= 0){
+                document.write("<br>found");
+            }else{
+                document.write("<br>not found");
+            }
+
+            var name="Be Creative";
+            document.write("<br>"+name.slice(0,2));
+            document.write("<br>"+name.slice(3,11));
+
+            var name="Be Creative";
+            var mystr = (name.substr(0,6));
+            document.write("<br>",mystr);
+
+            var name="Be Creative";
+            var mystr = (name.substring(3,8));
+            document.write("<br>",mystr);
+
+            var cdate=new Date();
+            cdate.setMinutes(80);
+            document.write("Set Seconds : "+cdate);
+
+            var data=new Array("7","4","2","1","5");
+            document.write("<br>Number : ",data);
+            data.sort();
+            document.write("<br>Sorted Number : ",data);
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

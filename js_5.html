@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        document.write("<center>");
+
+            function myFunction()
+            {
+                document.getElementById('demo').innerHTML="hello world";
+            }
+            function myfunction_1(){
+                document.getElementById('demo').innerHTML="how are you";
+            }
+            function myfunction_2(){
+                alert('hello world');
+            }
+            function myfunction_3()
+            {
+                alert('hello my world');
+            }
+            function myFunction_4() 
+            {
+                document.getElementById("txtbox").value.toUppercase();
+            }
+            function myFunction_5() 
+            {
+                    var x = document.getElementById("txtbox");
+                    x.value = x.value.toUpperCase();
+            }
+            document.getElementById("demo").innerHTML = Math.PI;
+    </script>
+    <style>
+        .demo{
+            box-shadow: 0px 0px 10px black;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- javascrip event's -->
+<!--     
+    <h1>The onclick Event</h1>
+    <p>The onclick event is used to trigger a function when an element is clicked on.</p>
+    <button onclick="myFunction()">Click me</button>
+    <button ondblclick="myfunction_1()">Click mee</button>  
+    <p id="demo"></p>
+
+    <table border="1">
+        <tr>
+            <td class="demo" align="center">
+                <div onmouseover="myfunction_2()">---onmouseover---</div>
+            </td>
+            <td class="demo" align="center">
+                <div onmouseout="myfunction_3()">---onmouseout---</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="demo">
+                <input type="text" onkeypress="myFunction_4()" id="txtbox">
+            </td>
+            <td class="demo">
+                <input type="text" onkeyup="myFunction_5()" id="txtbox">
+            </td>
+        </tr> -->
+    </table>
+    <hr>
+    <br>
+        <!-- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button> -->
+
+        <button onclick="document.getElementById('myimage').scr='image/pic_bulbon.gif'">turn on the light</button>
+        <!-- <img src="image/pic_bulbon.gif" alt="" srcset=""> -->
+        <img id="myimage" src="image/pic_bulboff.gif"  style="width:100px;">
+        <button onclick="document.getElementById('myimage').scr='image/pic_bulbon.gif'">turn off the light</button>
+        <!--<script>
+            document.getElementById('demo').innerHTML="my first javasctript";
+        </script> -->
+        <hr>
+        <button onclick="window.print()">print this page</button>
+
+
+</body>
+</html>

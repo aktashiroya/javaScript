@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coding challanges</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+    <script>
+      // Coding Challenge #1
+      //test 1
+      const jon_w = 92;
+      const mark_w = 78;
+      const jon_h = 1.95;
+      const mark_h = 1.69;
+
+      const BMImark = mark_w / mark_h ** 2;
+      const BMIjon = jon_w / (jon_h * jon_h);
+      const markHigherBMI = BMImark > BMIjon;
+
+      console.log(BMImark, BMIjon, markHigherBMI);
+
+      //test 2
+      const jon_w1 = 85;
+      const mark_w1 = 95;
+      const jon_h1 = 1.76;
+      const mark_h1 = 1.88;
+
+      const BMImark1 = mark_w1 / mark_h1 ** 2;
+      const BMIjon1 = jon_w1 / (jon_h1 * jon_h1);
+      const markHigherBMI1 = BMImark1 > BMIjon1;
+
+      console.log(BMImark1, BMIjon1, markHigherBMI1);
+
+      //Coding Challenge #2
+      const jon_w2 = 92;
+      const mark_w2 = 78;
+      const jon_h2 = 1.95;
+      const mark_h2 = 1.69;
+
+      const BMImark2 = mark_w2 / mark_h2 ** 2;
+      const BMIjon2 = jon_w2 / (jon_h2 * jon_h2);
+      if (BMImark2 > BMIjon2) {
+        console.log(
+          `mark's (${BMImark2}) BMI is higher then jon's(${BMIjon2})!`
+        );
+      } else {
+        console.log(
+          `jon's (${BMIjon2}) BMI is higher then mark's(${BMImark2})!`
+        );
+      }
+
+      //Coding Challenge #3
+      // Data=1 :  Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+      const Dolphinsscore = (96 + 108 + 89) / 3;
+      const Koalasscore = (88 + 91 + 110) / 3;
+
+      console.log(Dolphinsscore, Koalasscore);
+
+      if (Dolphinsscore > Koalasscore) {
+        console.log("Dolphins is win!");
+      } else if (Koalasscore > Dolphinsscore) {
+        console.log("Koalas is win!");
+      } else if (Dolphinsscore === Koalasscore) {
+        console.log("both are win!");
+      }
+
+      // Data Bonus 1 :  Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+      const Dolphinsscore1 = (97 + 112 + 101) / 3;
+      const Koalasscore1 = (109 + 95 + 123) / 3;
+
+      console.log(Dolphinsscore1, Koalasscore1);
+
+      if (Dolphinsscore1 > Koalasscore1 && Dolphinsscore1 >= 100) {
+        console.log("Dolphins is win!");
+      } else if (Koalasscore1 > Dolphinsscore1) {
+        console.log("Koalas is win!");
+      } else if (Dolphinsscore1 === Koalasscore1) {
+        console.log("both are win!");
+      }
+
+      //  Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+      const Dolphinsscore2 = (97 + 112 + 101) / 3;
+      const Koalasscore2 = (109 + 95 + 106) / 3;
+
+      console.log(Dolphinsscore2, Koalasscore2);
+
+      if (Dolphinsscore2 > Koalasscore2 && Dolphinsscore2 >= 100) {
+        console.log("Dolphins is win!");
+      } else if (Koalasscore2 > Dolphinsscore2) {
+        console.log("Koalas is win!");
+      } else if (
+        Dolphinsscore2 === Koalasscore2 &&
+        Dolphinsscore2 >= 100 &&
+        Koalasscore2 >= 100
+      ) {
+        console.log("both are win!");
+      } else {
+        console.log(" no one's win the trophy ...!");
+      }
+
+      //Coding Challenge #4
+
+      const bill = 275;
+      const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+      console.log(
+        `“The bill was ${bill}, the tip was ${tip}, and the total value ${
+          bill + tip
+        }`
+      );
+    </script>
+  </head>
+
+  <body></body>
+</html>

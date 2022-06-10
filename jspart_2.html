@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript fundamental part-2</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-align: center;
+        font-size: 50px;
+      }
+
+      .js {
+        padding-top: 100px;
+        transition: 2s;
+        bottom: auto;
+        display: block;
+      }
+
+      .js:hover {
+        color: aqua;
+        font-size: 40px;
+        transform: skew(10deg, 10deg);
+      }
+    </style>
+    <script>
+      let drivinglicense = false;
+      const passtest = true;
+
+      if (passtest) drivinglicense = true;
+      if (drivinglicense) console.log("i can drive");
+
+      function logger() {
+        console.log("my name is akta");
+      }
+      logger();
+
+      function fruit(apple, orange) {
+        console.log(apple, orange);
+        const juice = `juice with ${apple} apple and ${orange} oranges.`;
+        return juice;
+      }
+      const applejuice = fruit(5, 6);
+      console.log(applejuice);
+
+      const appleorangejuice = fruit(2, 3);
+      console.log(appleorangejuice);
+
+      const num = Number("23");
+
+      // function declaraction
+      function calcage1(birthyear) {
+        return 2037 - birthyear;
+      }
+      const age3 = calcage1(2003);
+
+      // function expression
+      const calcage2 = function (birthyear) {
+        return 2037 - birthyear;
+      };
+      const age4 = calcage2(2002);
+      console.log(age3, age4);
+    </script>
+  </head>
+
+  <body>
+    <div class="js">javascript fundamental part-2</div>
+  </body>
+</html>
