@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+    <script>
+      const name = "jon";
+      const job = "doctor";
+      const year = 2022;
+      const birthyear = 2002;
+
+      const jon =
+        " I'm " + name + " , a " + (year - birthyear) + "year old " + job + "!";
+      console.log(jon);
+
+      const jonNew = ` I'm ${name} , a ${year - birthyear} year old${job}!`;
+      console.log(jonNew);
+
+      console.log(`hello.`);
+
+      console.log("hello\n\welcome.");
+
+      console.log(`hello 
+            welcome`);
+
+      //type converson
+      const inputyear = "2003";
+      console.log(Number(inputyear), inputyear);
+      console.log(inputyear + 18);
+
+      console.log(Number("jon"));
+      console.log(typeof NaN);
+      console.log(String(23), 23);
+
+      //type coercion
+      console.log("I am " + 23 + " year old !");
+      console.log("I am " + String(23) + " year old !");
+
+      console.log("23" - "10" - 3);
+      console.log("23" * "10");
+      console.log("23" < "19");
+
+      let n = "1" + 1;
+      n = n - 1;
+      console.log(n);
+
+      console.log(Boolean(0));
+      console.log(Boolean(null));
+      console.log(Boolean(NaN));
+      console.log(Boolean(undefined));
+
+      const money = 0;
+      if (money) {
+        console.log("don't spend it all");
+      } else {
+        console.log("you should get a job");
+      }
+
+      const age = 18;
+      if (age === 18) {
+        console.log("you just became an adult :D (strict)");
+      }
+      if (age == 18) {
+        console.log("you just became an sdult :D (loose)");
+      }
+
+      const fav = Number(prompt("what is favorite number"));
+      console.log(fav);
+      console.log(typeof fav);
+
+      if (fav === 23) {
+        console.log("cool 23 is amazing number!");
+      } else if (fav === 7) {
+        console.log("the 7 is also cool number!");
+      } else {
+        console.log("this is not cool number!");
+      }
+
+      if (fav !== 23) console.log("way not 23?");
+
+      //booleann
+
+      const hasdrvinglicense = true;
+      const hasvirsion = true;
+
+      console.log(hasdrvinglicense && hasvirsion);
+      console.log(hasdrvinglicense || hasvirsion);
+      console.log(!hasdrvinglicense);
+
+      const shoulddrive = hasdrvinglicense && hasvirsion;
+      // if (shoulddrive) {
+      //     console.log("sara is able to drive!");
+      // } else {
+      //     console.log("sara is not able to drive!");
+      // }
+
+      const isTired = false;
+      console.log(hasdrvinglicense && hasvirsion && isTired);
+      if (hasdrvinglicense && hasvirsion && !isTired) {
+        console.log("sara is able to drive!");
+      } else {
+        console.log("sara is not able to drive!");
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>

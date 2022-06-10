@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>statment</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+    <script>
+      const age = 1;
+      const yearold = age >= 18;
+
+      if (yearold) {
+        console.log("you can vot...!");
+      } else {
+        const yearleft = 18 - age;
+        console.log(`you can not vot...wait ${yearleft} year!`);
+      }
+
+      const birthyear = 1991;
+      let a; // a means century
+      if (birthyear <= 2000) {
+        a = 20;
+      } else {
+        a = 21;
+      }
+      console.log(a);
+
+      //switchcase
+
+      const day = "sunday";
+      switch (day) {
+        case "monday":
+          console.log("first day in a school");
+          break;
+        case "tuseday":
+          console.log("make new friend's");
+          break;
+        case "wednesday":
+          console.log("meet techer's");
+          break;
+        case "thusday":
+        case "friday":
+          console.log("write homework");
+          break;
+        case "saturday":
+        case "sunday":
+          console.log("enjoy your weekend");
+          break;
+        default:
+          console.log("this is not valid day!");
+      }
+
+      if (day === "monday") {
+        console.log("first day in a school");
+      } else if (day === "tuseday") {
+        console.log("make new friend's");
+      } else if (day === "wednesday") {
+        console.log("meet techer's");
+      } else if (day === "thusday" || day === "friday") {
+        console.log("write homework");
+      } else if (day === "saturday" || day === "sunday") {
+        console.log("enjoy your weekend");
+      } else {
+        console.log("this is not valid day!");
+      }
+
+      //conditional operator
+
+      const age1 = 19;
+      age1 >= 18
+        ? console.log("i like drink wine")
+        : console.log("i like drink water");
+
+      const drink = age1 >= 18 ? "wine" : "water";
+      console.log(drink);
+
+      let drink2;
+      if (age1 >= 18) {
+        drink2 = "wine";
+      } else {
+        drink2 = "water";
+      }
+      console.log(drink2);
+
+      console.log(`I Like drink ${age1 >= 18 ? "wine" : "water"}`);
+    </script>
+  </head>
+
+  <body></body>
+</html>
